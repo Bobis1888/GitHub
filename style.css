@@ -72,18 +72,15 @@ label{
 	max-height: 500px;
 	font-size: 16px;
 }
-/*
-анимация крестик - меню
-#toggle:checked ~ .first{
+#toggle:checked + label>.first{
 	display: none;
 }
-#toggle:checked ~ .second{
+#toggle:checked + label>.second{
 	transform: rotate(45deg);
 }
-#toggle:checked ~ .third{
+#toggle:checked + label>.third{
 	transform: rotate(-45deg);
 }
-#toggle:checked ~ .fourth{
+#toggle:checked + label>.fourth{
 	display: none;
 }
-*/
