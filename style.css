@@ -114,13 +114,23 @@ label{
 	background:url("img/iphone.png") no-repeat;
 	background-position: center center;
 }
-.container_sign_up h1,.button {
-	font-size: 31px;
+.container_sign_up {
+	padding-left:20px;
 }
+.container_sign_up h1{
+	font-size: 31px;
+	margin:15px 0 0 0;
+}
+.container_sign_up p {
+	font-size: 22px;
+	line-height: 40px;
+	margin:5px 0 25px 0px;
+} 
 .button{
 	display: inline-block;
 	text-decoration: none;
 	color: white;
+	font-size: 31px;
 	padding:0px 15px 5px 15px;
 	background: #5094f2;
 	text-align: center;
@@ -129,4 +139,25 @@ label{
 	position: relative;
 	top: 5px;
 	width: 30px;
+}
+.card {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	border-bottom: 1px solid #ccc;
+	padding: 40px 70px 40px 40px;
+}
+.card_text{
+	margin-left: 20px;
+}
+.img_card{
+	background-image:url(img/icon_1.png) ;
+	background-position:center center;
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+}
+.img_card_second {
+	background-image:url(img/icon_2.png);
+}
+.img_card_third {
+	background-image:url(img/icon_3.png);
 }
