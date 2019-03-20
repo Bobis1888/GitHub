@@ -3,8 +3,23 @@ body{
 	margin: 0;
 	padding: 0;
 }
+.header {
+	height: 90px;
+}
+.logo {
+	margin:10px 0 15px 30px;
+}
+.logo span {
+	font-size: 50px;
+}
+.logo img {
+	position: relative;
+	top: 5px;
+	width: 50px;
+	margin-right: 10px;
+}
 .container {
-	width: 640px;
+	width: 30%;
     position: absolute;
     color: white;
     text-align: center;
@@ -12,20 +27,21 @@ body{
     top: 0;
     right: 0;
 }
-#toggle, a{
+#toggle, .main_menu>a{
 	display: none;
  }
 label{
-	background-color: #5094f2;
+	background: #5094f2;
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     width: 60px;
     height: 100%;
     cursor: pointer;
    	z-index:2; 
     line-height: 40px;
+    border-radius: 2px;
 }
 .burger_line {
 	position: absolute;
@@ -47,13 +63,14 @@ label{
 	display: block;
 	position: absolute;
 	width: 100%;
-	bottom: -10px;
-	left: 0;
+	bottom: -20px;
+	right: 20px;
 	transform: translateY(100%);
 	max-height: 0;
 	font-size: 0;
 	overflow: hidden;
 	transition: .5s all;
+	border-radius: 5px;
 }
 .main_menu a {
 	display: block;
@@ -61,17 +78,18 @@ label{
 	padding: 10px;
 	color: white;
 	text-decoration: none;
-	border-top: 1px solid black;
 	background:#5094f2;
 }
 .main_menu a:hover {
-	opacity: .8;
+	opacity: .95;
 }
+/*при чекнутом чекбоксе появляется меню*/
 #toggle:checked ~ .main_menu{
 	width: 100%;
 	max-height: 500px;
 	font-size: 16px;
 }
+/*трансформация меню в крестик первая и последняя линия исчезают*/
 #toggle:checked + label>.first{
 	display: none;
 }
@@ -83,4 +101,32 @@ label{
 }
 #toggle:checked + label>.fourth{
 	display: none;
+}
+.first_section{
+	height: 245px;
+	background:url("img/background.png") no-repeat;
+	background-size: 100% auto;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	color: white;
+}
+.img {
+	background:url("img/iphone.png") no-repeat;
+	background-position: center center;
+}
+.container_sign_up h1,.button {
+	font-size: 31px;
+}
+.button{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding:0px 15px 5px 15px;
+	background: #5094f2;
+	text-align: center;
+}
+.button img{
+	position: relative;
+	top: 5px;
+	width: 30px;
 }
