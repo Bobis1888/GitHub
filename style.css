@@ -15,11 +15,11 @@ body{
 .logo img {
 	position: relative;
 	top: 5px;
-	width: 50px;
+	width: 60px;
 	margin-right: 10px;
 }
 .container {
-	width: 30%;
+	width: 100%;
     position: absolute;
     color: white;
     text-align: center;
@@ -64,17 +64,15 @@ label{
 	position: absolute;
 	width: 100%;
 	bottom: -20px;
-	right: 20px;
 	transform: translateY(100%);
 	max-height: 0;
 	font-size: 0;
 	overflow: hidden;
 	transition: .5s all;
-	border-radius: 5px;
 }
 .main_menu a {
 	display: block;
-	width:90%;
+	width:100%;
 	padding: 10px;
 	color: white;
 	text-decoration: none;
@@ -113,6 +111,7 @@ label{
 .img {
 	background:url("img/iphone.png") no-repeat;
 	background-position: center center;
+	background-size: 50% auto;
 }
 .container_sign_up {
 	padding-left:20px;
@@ -142,12 +141,13 @@ label{
 }
 .card {
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 20% 80%;
 	border-bottom: 1px solid #ccc;
 	padding: 20px 0px 20px 40px;
 }
 .card_text{
 	margin-left: 20px;
+	padding-right: 120px;
 }
 .card_text h1{
 	font-size: 34px;
@@ -161,8 +161,8 @@ label{
 }
 .img_card{
 	display: block;
-	height: 100%;
-	margin:0 auto;
+	height: 140px;
+	margin: auto;
 
 }
 .container_basket h1{
@@ -172,7 +172,7 @@ label{
 	margin-top: 50px;
 }
 .container_basket img{
-	width: 40%;
+	width: 30%;
 	display: block;
 	margin: 0 auto;
 }
@@ -197,4 +197,98 @@ footer span{
 	font-size: 15px;
 	padding:50px 0;
 	border-top: 1px solid #909090;
+}
+@media screen and (min-width: 1024px){
+	label{
+		display: none;
+	}
+	.main_menu {
+		position: static;
+		overflow: visible;
+		position: absolute;
+		right: 0px;
+
+	}
+	.main_menu a{
+		display:inline-block;
+		font-size: 20px;
+		color: #6c6c6c;
+		background:none;
+		margin-right: 0px;
+		padding: 0;
+		width: 100px;
+
+		
+	}
+	.main_menu a:hover{
+		 border-bottom: 3px solid #5094f2;
+		 padding-bottom: 37px; 
+	}
+	.logo{
+		display: inline-block;
+		position: relative;
+		left: 30px;
+	}
+	.first_section{
+		height: 490px;
+	}
+	.img{
+		background-size: 65%;
+	}
+	.container_sign_up {
+		margin:auto 20px;
+	}
+	.container_sign_up h1 {
+		font-size: 42px;
+	}
+	.container_sign_up p{
+		font-size: 24px;
+	}
+	.cards{
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		padding: 70px 10px 20px 10px;
+	}
+	.card{
+		display: block;
+		padding: 0;
+		border: none;
+	}
+	.card_text{
+		text-align: center;
+		padding: 0;
+		margin:0;
+	}
+	.card_text h1 {
+		font-size: 20px;
+	}
+	.card_text p{
+		font-size: 14px;
+		padding: 0 70px;
+	}
+	.img_card{
+		height: 190px;
+	}
+	.third_section{
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+	.container_basket h1 {
+		margin-top: 20px;
+	}
+	.container_basket img{
+		width: 65%;
+	}
+	.container_text_bottom{
+		margin:60px 0 0 0;
+	}
+	.container_text_bottom h2{
+		font-size: 22px;
+	}
+	.container_text_bottom p{
+		line-height: 30px;
+	}
+	footer span {
+		padding: 30px;
+	}
 }
