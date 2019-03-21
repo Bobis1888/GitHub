@@ -11,6 +11,8 @@ body{
 }
 .logo span {
 	font-size: 50px;
+	position: absolute;
+	top: 10px;
 }
 .logo img {
 	position: relative;
@@ -102,7 +104,7 @@ label{
 }
 .first_section{
 	height: 245px;
-	background:url("img/background.png") no-repeat 0 -50px;
+	background:url("img/background.png") no-repeat 0 -40px;
 	background-size: 100% auto;
 	display: grid;
 	grid-template-columns: 40% 60%;
@@ -138,6 +140,9 @@ label{
 	position: relative;
 	top: 5px;
 	width: 30px;
+}
+.background-2{
+	display: none;
 }
 .card {
 	display: grid;
@@ -203,40 +208,46 @@ footer span{
 		display: none;
 	}
 	.main_menu {
-		position: static;
-		overflow: visible;
 		position: absolute;
+		overflow: visible;
 		right: 0px;
-
+		width: 500px;
+		top: 45px;
 	}
 	.main_menu a{
-		display:inline-block;
+		display:inline;
 		font-size: 20px;
 		color: #6c6c6c;
 		background:none;
-		margin-right: 0px;
-		padding: 0;
-		width: 100px;
-
-		
+		margin-left: 20px;
+			
 	}
 	.main_menu a:hover{
 		 border-bottom: 3px solid #5094f2;
-		 padding-bottom: 37px; 
+		 padding-bottom: 15px; 
 	}
 	.logo{
 		display: inline-block;
 		position: relative;
-		left: 30px;
+		left: 10px;
+	}
+	.logo span{
+		position: absolute;
+		top: 0px;
+		left: 70px;
+
 	}
 	.first_section{
 		height: 490px;
+		grid-template-columns: 50% 50%;
 	}
 	.img{
 		background-size: 65%;
 	}
 	.container_sign_up {
-		margin:auto 20px;
+		margin:auto;
+		margin-left: 0;
+		padding:0;
 	}
 	.container_sign_up h1 {
 		font-size: 42px;
@@ -244,6 +255,19 @@ footer span{
 	.container_sign_up p{
 		font-size: 24px;
 	}
+	.button{
+		position: relative;
+		top: 10px;
+		left: 30px;
+	}
+	.background-2{
+	display: block;
+	height: 10px;
+	background: url(img/background-2.png) repeat-x;
+	width: 100%;
+	position: absolute;
+	top: 570px;
+	}	
 	.cards{
 		display: grid;
 		grid-template-columns: 33% 33% 33%;
@@ -264,7 +288,7 @@ footer span{
 	}
 	.card_text p{
 		font-size: 14px;
-		padding: 0 70px;
+		padding: 0;
 	}
 	.img_card{
 		height: 190px;
@@ -290,5 +314,16 @@ footer span{
 	}
 	footer span {
 		padding: 30px;
+	}
+}
+@media screen and (min-width: 1440px){
+	.img{
+		background-size: 50%;
+	}
+	.third_section{
+		grid-template-columns: 50% 50%;
+	}
+	.container_basket img{
+		width: 45%;
 	}
 }
