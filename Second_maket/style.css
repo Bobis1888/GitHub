@@ -1,11 +1,12 @@
 *{
 	margin:0;
 	padding:0;
-	color: #f5f5f5;
 	font-family: 'Lato', sans-serif;
 }
 body{
 	background:url("img/background_first.png") no-repeat;
+	color: #f5f5f5;
+	
 }
 .header_section{
 	height: 115px;
@@ -111,24 +112,25 @@ body{
 	height: 711px;
 	text-align: center;
 }
-.container_headline_awesome h2{
+.headline_awesome h2{
 	font-size: 37px;
 	padding-top: 170px;
 	margin-bottom: 145px;
 	letter-spacing: 4px;
 }
-.container_headline_awesome h2:after{
+.headline_awesome h2:after{
 	content: "W";
 	opacity: 0.2;
 	font-size: 247px;
 	position: absolute;
 	top: 920px;
-	right: 665px;
+	left: 42%;
 }
 .container_features{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
-	margin:70px 215px;
+	margin:0 auto;
+	width: 70%;
 }
 .feature{
 	margin:0 20px;
@@ -155,10 +157,102 @@ body{
 	font-size: 15px;
 	margin-top:25px;
 }
-
-/* сделать блоки 2*2
-div{
+.container_cards{
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr
-}*/
+	grid-template-columns:50% 50%;
+	height: 948px;
+}
+.card_img_one{
+	background:url("img/card_img_one.png")no-repeat;
+}
+.card_img_two{
+	background:url("img/card_img_two.png")no-repeat;
+}
+.card_text{
+	background:#222;
+	padding: 105px 80px 0 250px;
+}
+.card_text span{
+	font-size: 13px;
+}
+.card_text h3{
+	font-size: 25px;
+	margin-top:15px;
+	margin-bottom: 35px;
+}
+.card_text p{
+ font-size: 15px;
+}
+.card_text:nth-child(4){
+	background-color: #f3f3f3;
+	color: #222;
+	padding: 105px 250px 0 80px;
+}
+.blog_section{
+	color: #222;
+	text-align: center;
+	background:#fff;
+}
+.headline_blog h2{
+	margin: 165px 0 115px 0;
+	font-size: 38px;
+}
+.headline_blog h3{
+	font-size: 30px;
+	margin-bottom: 75px;
+}
+.headline_blog h2:after{
+	content: "B";
+	position: absolute;
+	display: block;
+	opacity: 0.2;
+	font-size: 250px;
+	top: 2575px;
+	right: 45%;
+}
+.container_cards_blog{
+	width:80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+.card_blog{
+	display: grid;
+	margin:0 10px;
+}
+.card_blog h4{
+	font-size: 18px;
+	color: #11749e;
+	margin: 44px 0 28px 0;
+}
+.card_blog p{
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+.blog_footer{
+	height: 355px;
+	background:#11749e;
+}
+.container_footer{
+	width: 80%;
+	margin: auto;
+	padding-top: 110px;
+	display: grid;
+	grid-template-columns: 50% 50%
+}
+.container_footer p{
+	text-align: left;
+	font-size: 15px;
+	line-height: 20px;
+	color:#dfecf2;
+	padding: 0px 70px;
+	word-spacing: 8px
+}
+.img_footer{
+	width: 70px;
+	height:70px;
+	background:url("img/features_icon.png")-155px 5px no-repeat;
+	background-size: 550%;
+	float: left;
+	margin-right: 30px;
+}
