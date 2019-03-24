@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Gothic A1', sans-serif;
+}
+body{
+	background:url("img/background_first.png") no-repeat;
+}
+.header_section{
+	height: 115px;
+	border-bottom: 1px solid #626262;
+}
+.logo{
+	display: inline-block;
+	padding:0;
+	background: #11749e;
+	width: 67px;
+	height: 67px;
+	margin: 22px 0 26px 215px;
+	box-shadow: 12px 8px #c4c3c2;
+}
+.logo span{
+	display: inline-block;
+	color: #f5f5f5;
+	font-size: 30px;
+	margin: 17px 15px;
+	font-weight: bold;
+}
+.container_main_menu{
+	display:inline-block;
+	margin-left:215px;
+	position: relative;
+	top: 5px
+}
+.main_menu a{
+	text-decoration: none;
+	color: #d8d8d8;
+	font-size: 20px;
+	margin-left: 35px;
+	font-weight: 500;
+}
+.social{
+	position: absolute;
+	top: 0px;
+	right: -40px;
+}
+.social div{
+	position: absolute;
+	display: inline-block;
+	background-image: url("img/social_icon.png");
+	width: 18px;
+	height: 18px;
+}
+.second_icon{
+	right: -60px;
+	background-position: -40px 0px;
+}
+.third_icon{
+	right: -110px;
+	background-position: -83px 0px;
+}
+.fourth_icon{
+	right: -160px;
+	background-position: 18px 0px;
+}
