@@ -14,14 +14,15 @@ body{
 }
 .logo{
 	display: inline-block;
-	padding:0;
+	position: relative;
+	top: 20px;
+	left: 14%;	
 	background: #11749e;
 	width: 67px;
 	height: 67px;
-	margin: 22px 0 26px 215px;
 	box-shadow: 12px 8px #c4c3c2;
 }
-.logo span{
+.logo h6{
 	display: inline-block;
 	font-size: 30px;
 	margin: 17px 15px;
@@ -29,9 +30,9 @@ body{
 }
 .container_main_menu{
 	display:inline-block;
-	margin-left:230px;
 	position: relative;
-	top: 3px
+	top: 25px;
+	left: 28%;
 }
 .main_menu a{
 	text-decoration: none;
@@ -178,10 +179,11 @@ body{
 .card_text h3{
 	font-size: 25px;
 	margin-top:15px;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 .card_text p{
  font-size: 15px;
+ margin-top: 20px;
 }
 .card_text:nth-child(4){
 	background-color: #f3f3f3;
@@ -375,4 +377,65 @@ span:nth-child(5){
 .submit_section{
 	height:850px;
 	background:url("img/background_sibmit.png");
+	text-align: center;
+}
+.container_submit{
+	width: 80%;
+	margin:0 auto;
+}
+.headline_submit h2{
+	font-size: 37px;
+	padding-top: 220px;
+}
+.headline_submit h2:after{
+	content: "C";
+	position: absolute;
+	display: block;
+	opacity: 0.2;
+	font-size: 240px;
+	top: 5915px;
+	right: 45%;
+}
+.form_submit input{
+	width:25%;
+	margin:10px;
+	margin-top:140px;
+	padding: 10px;
+	background:none;
+	border:1px solid #fff;
+	color: #fff;
+}
+.form_submit textarea{
+	width: 82%;
+	background: none;
+	color: #fff;
+	padding: 10px;
+	margin-top: 30px;
+}
+.button_submit{
+	margin-top: 30px;
+	padding: 15px;
+}
+.button_submit a{
+	background:#11749e;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 24px;
+	padding: 10px 60px;
+}
+footer{
+	background:#222;
+}
+.container_maps{
+	background:url("img/footer_maps.png") no-repeat;
+	height:330px;
+}
+.container_text{
+	height:65px;
+	width:80%;
+	color: #fff;
+	margin:auto;
+	padding-top: 50px;
+	font-size: 15px;
 }
