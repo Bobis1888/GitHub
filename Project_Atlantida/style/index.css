@@ -32,7 +32,7 @@ header{
 }
 .logo_text{
 	font-size: 20px;
-	font-weight: 550;
+	font-weight: normal;
 	letter-spacing: 2px;
 }
 .navigation_container{
@@ -83,15 +83,12 @@ header{
 }
 .first_headline{
 	font-size: 36px;
-	font-family: Amsdam Regular;
+	font-family: "Amsdam Regular";
 	font-weight: normal;
 	letter-spacing: 6px;
 	padding: 34px 25px;
 	border-style: solid;
 	border-width: 9px 0px ;
-	-moz-border-image: url(../img/line_headline.png) 5 0 5 0 repeat repeat;
-	-webkit-border-image: url(../img/line_headline.png) 5 0 5 0 repeat repeat;
-	-o-border-image: url(../img/line_headline.png) 5 0 5 0 repeat repeat;
 	border-image: url(../img/line_headline.png) 5 0 5 0 repeat repeat;
 }
 .button_after_first_headline{
@@ -123,7 +120,7 @@ header{
 	text-align: center;
 	font-size: 20px;
 	font-weight: normal;
-	font-family: Amsdam Regular;
+	font-family: "Amsdam Regular";
 	border-image: url(../img/line_headline.png) 5 0  0 repeat repeat;
 }
 .about_us_text{
