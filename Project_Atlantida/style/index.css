@@ -43,7 +43,7 @@ header{
 	text-decoration: none;
 	color: #757575;
 	margin-left: 10px;	
-	font-size: 12px;
+	font-size: 8px;
 }
 .social_container{
 	display:flex;
@@ -119,4 +119,72 @@ header{
 	background-color: white;
 	padding-top: 55px;
 }
-
+.headline_about_us{
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: Amsdam Regular;
+	border-image: url(../img/line_headline.png) 5 0  0 repeat repeat;
+}
+.about_us_text{
+	width: 90%;
+	margin:0 auto;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+.wrapper_buttons{
+	display:flex;
+	justify-content: center;
+	padding-bottom: 50px
+}
+.button_about_us{
+	width: 135px;
+	height:40px;
+	background:inherit;
+	border: 2px solid black;
+	margin:2px;
+	font-size: 13px;
+}
+.button_about_us:hover{
+	background:black;
+	color: white;
+}
+.statistic_container{
+	margin:40px 30px;
+	padding-bottom: 40px;
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	text-align: center;
+	color: #3e3d3d;
+}
+.img_footer_about_us{
+	background-image: url("../img/about_us_sprite.png");
+	width: 42px;
+	height: 40px;
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+.two_img_us{
+	background-position: -45px;
+}
+.three_img_us{
+	background-position: -90px;
+}
+.fourth_img_us{
+	background-position: -133px;
+}
+.statistic_item{
+	border-right:1px solid #b0b0b0;
+}
+.statistic_item:last-child{
+	border: none;
+}
+.statistic_item span{
+	font-size: 13px;
+}
+span.statistic_item_number{
+	font-size: 45px;
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+}
