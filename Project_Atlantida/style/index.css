@@ -4,9 +4,9 @@
 }
 body{
 	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
 	font-family: 'Crimson Text', serif;
+	box-sizing: border-box;
+	margin: 0;
 }
 header{
 	font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,7 @@ header{
 	text-decoration: none;
 	color: #757575;
 	margin-left: 10px;	
-	font-size: 8px;
+	font-size: 10px;
 }
 .social_container{
 	display:flex;
@@ -70,6 +70,7 @@ header{
 	display:flex;
 	align-items: center;
 	background:url("../img/first_bg.png") 0px -60px no-repeat;
+	background-color: #7b8d8c;
 	color: #fff;
 }
 .flex_vertical_center{
@@ -114,14 +115,14 @@ header{
 }
 .content_conteiner{
 	background-color: white;
-	padding-top: 55px;
 }
-.headline_about_us{
+.headline{
 	text-align: center;
 	font-size: 20px;
 	font-weight: normal;
 	font-family: "Amsdam Regular";
-	border-image: url(../img/line_headline.png) 5 0  0 repeat repeat;
+	padding:60px 0 40px 0;
+	margin:0;
 }
 .about_us_text{
 	width: 90%;
@@ -147,8 +148,8 @@ header{
 	color: white;
 }
 .statistic_container{
-	margin:40px 30px;
-	padding-bottom: 40px;
+	margin:0px 30px;
+	padding: 50px 0px;
 	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	text-align: center;
@@ -185,3 +186,69 @@ span.statistic_item_number{
 	display: block;
 	margin-top: 10px;
 }
+.services{
+	height:743px;
+	background:url("../img/background_services.png") no-repeat center center;
+	background-color: #282830;
+	color:#e3e3e3;
+}
+.wrapper_services{
+	width: 70%;
+	margin:0 auto;
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+}
+.text_srvices{
+	font-size: 14px;
+	width: 75%;
+	margin:0 auto;
+	padding:0 0 80px 0;
+}
+.container_cards_services{
+	display:flex;
+	justify-content: space-between;
+}
+.card_item_services{
+	width: 18%;
+	padding:10px 30px;
+	border: 1px solid white;
+	border-top: none;
+	background: linear-gradient(#fff, #000), linear-gradient(#fff, #000);
+	background-size: 105px 3px, 105px 3px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right top;
+	/*разрыв бордера*/
+}
+.img_card_item{
+	background-image: url("../img/services_sprite.png");
+	width: 26px;
+	height:25px;
+	margin:0 auto;
+	position: relative;
+	top: -21px;
+}
+.img_card_item_two{
+	background-position: -37px;
+}
+.img_card_item_three{
+	background-position: -68px;
+}
+.img_card_item_fourth{
+	background-position: -104px;
+}
+.card_item_services h6{
+	font-size: 13px;
+}
+.card_item_services p{
+	font-size: 16px;
+}
+.history{
+	height:1495px;
+	background:url("..//img/background_history.png") no-repeat center center;
+}
+.wrapper_history{
+	width: 70%;
+	margin:0 auto;
+}
+
