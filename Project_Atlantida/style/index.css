@@ -4,11 +4,11 @@
 }
 body{
 	padding: 0;
-	font-family: 'Crimson Text', serif;
 	box-sizing: border-box;
 	margin: 0;
+	font-family: 'Crimson Text', serif;
 }
-header{
+header,h6{
 	font-family: 'Montserrat', sans-serif;
 }
 .wrapper_navigation_and_social{
@@ -127,7 +127,7 @@ header{
 .about_us_text{
 	width: 90%;
 	margin:0 auto;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 40px;
 }
 .wrapper_buttons{
@@ -141,7 +141,7 @@ header{
 	background:inherit;
 	border: 2px solid black;
 	margin:2px;
-	font-size: 13px;
+	font-size: 16px;
 }
 .button_about_us:hover{
 	background:black;
@@ -177,8 +177,9 @@ header{
 .statistic_item:last-child{
 	border: none;
 }
-.statistic_item span{
+.statistic_item h6{
 	font-size: 13px;
+	margin: 10px;
 }
 span.statistic_item_number{
 	font-size: 45px;
@@ -200,7 +201,7 @@ span.statistic_item_number{
 	text-align: center;
 }
 .text_srvices{
-	font-size: 14px;
+	font-size: 16px;
 	width: 75%;
 	margin:0 auto;
 	padding:0 0 80px 0;
@@ -239,6 +240,7 @@ span.statistic_item_number{
 }
 .card_item_services h6{
 	font-size: 13px;
+	margin: 10px;;
 }
 .card_item_services p{
 	font-size: 16px;
@@ -251,4 +253,75 @@ span.statistic_item_number{
 	width: 70%;
 	margin:0 auto;
 }
-
+.container_headline_history{
+	text-align: center;
+	width: 85%;
+	margin:0 auto;
+}
+.container_headline_history p{
+	font-size: 16px;
+}
+.background_year{
+	display:flex;
+	flex-direction: column;
+	position: relative;
+}
+.year_2015,.year_2014{
+	margin:0 auto;
+	font-style: 13px;
+	position: relative;
+}
+.year_2015{
+	top: 60px;
+}
+.year_2014{
+	top:770px;
+}
+.container_item_history_cards{
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+.half_item_history_cards{
+	padding:20px 25px 0 25px;
+	position: relative;
+}
+.item_history_card{
+	border: 1px solid black;
+	margin:10px 0;
+	position: relative;
+	color: #3e3d3d;
+}
+.item_history_card h6{
+	margin:30px 0 0px 20px;
+	font-size: 14px;
+}
+.item_history_card span{
+	margin:0 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.item_history_card p{
+	margin:20px;
+}
+.item_history_card:hover{
+	background:#3e3d3d;
+	color: #fff;
+}
+.half_item_history_cards_left .item_history_card:nth-child(1){
+	top: 10%;
+}
+.half_item_history_cards_left .item_history_card:nth-child(2){
+	top: 12%;
+}
+.half_item_history_cards_left .item_history_card:nth-child(3){
+	top: 47%;
+}
+.half_item_history_cards_right .item_history_card:nth-child(1){
+	top: 15%;
+}
+.half_item_history_cards_right .item_history_card:nth-child(2){
+	top: 22%;
+}
+.half_item_history_cards_right .item_history_card:nth-child(3){
+	top: 44%;
+}
