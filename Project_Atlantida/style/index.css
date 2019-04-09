@@ -11,10 +11,12 @@ body{
 header,h6{
 	font-family: 'Montserrat', sans-serif;
 }
+.wrapper{
+	width: 70%;
+	margin:0 auto;
+}
 .wrapper_navigation_and_social{
 	height:65px;
-	width: 70%;
-	margin:auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,11 +104,7 @@ header,h6{
 }
 .about_us{
 	background-color: #e3e3e3;
-}
-.wrapper_about_us{
-	width: 70%;
-	margin:0 auto;
-	padding-top: 75px;
+	padding-top: 60px;;
 }
 .header_background{
 	background-image: url("../img/background_about_us.png");
@@ -115,6 +113,11 @@ header,h6{
 }
 .content_conteiner{
 	background-color: white;
+}
+.container_headline p{
+	width: 80%;
+	margin:0 auto;
+	text-align: center;
 }
 .headline{
 	text-align: center;
@@ -133,7 +136,8 @@ header,h6{
 .wrapper_buttons{
 	display:flex;
 	justify-content: center;
-	padding-bottom: 50px
+	padding-bottom: 50px;
+	margin-top:40px;
 }
 .button_about_us{
 	width: 135px;
@@ -194,21 +198,14 @@ span.statistic_item_number{
 	color:#e3e3e3;
 }
 .wrapper_services{
-	width: 70%;
-	margin:0 auto;
 	display:flex;
 	flex-direction: column;
-	text-align: center;
-}
-.text_srvices{
-	font-size: 16px;
-	width: 75%;
-	margin:0 auto;
-	padding:0 0 80px 0;
 }
 .container_cards_services{
 	display:flex;
 	justify-content: space-between;
+	margin-top:100px;
+	text-align:center;
 }
 .card_item_services{
 	width: 18%;
@@ -249,18 +246,6 @@ span.statistic_item_number{
 	height:1495px;
 	background:url("..//img/background_history.png") no-repeat center center;
 }
-.wrapper_history{
-	width: 70%;
-	margin:0 auto;
-}
-.container_headline_history{
-	text-align: center;
-	width: 85%;
-	margin:0 auto;
-}
-.container_headline_history p{
-	font-size: 16px;
-}
 .background_year{
 	display:flex;
 	flex-direction: column;
@@ -268,14 +253,14 @@ span.statistic_item_number{
 }
 .year_2015,.year_2014{
 	margin:0 auto;
-	font-style: 13px;
 	position: relative;
+	font-size:16px;
 }
 .year_2015{
-	top: 60px;
+	top: 90px;
 }
 .year_2014{
-	top:770px;
+	top:805px;
 }
 .container_item_history_cards{
 	display:grid;
@@ -324,4 +309,103 @@ span.statistic_item_number{
 }
 .half_item_history_cards_right .item_history_card:nth-child(3){
 	top: 44%;
+}
+.our_team{
+	background:url("../img/background_our_team.png") no-repeat center center;
+	height:666px;
+}
+.our_team_cards{
+	display:flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.our_team_card{
+	height:23vh;
+	width:24%;
+	margin:15px;
+}
+.our_team_cards_first{
+	background: url("../img/our_team_Image1.png") no-repeat center center;
+}
+.our_team_cards_second{
+	background: url("../img/our_team_Image2.png") no-repeat center center;
+}
+.our_team_cards_three{
+	background: url("../img/our_team_Image3.png") no-repeat center center;
+}
+.hide_div_our_team{
+	margin:10px auto;
+	background:rgba(255,255,255,0.6);
+	width: 90%;
+	height:94%;
+	position: relative;
+	display:none;
+}
+.caption_our_team_card{
+	position: absolute;
+	width: 50%;
+	bottom: 70px;
+	left: 20px;
+	border-bottom: 2px solid black;
+	padding-bottom:10px;
+}
+.cursive{
+	font-style: italic;
+}
+.our_team_card:hover .hide_div_our_team{
+	display: block;
+}
+.rortfolio{
+	background:white;
+}
+.albums_portfolio{
+
+	display: grid;
+  	grid-template-areas:"item_1 item_3 item_5 item_7"
+  						"item_1 item_3 item_5 item_7"
+  						"item_1 item_3 item_5 item_7"
+  						"item_1 item_3 item_5 item_7"
+  						"item_1 item_3 item_6 item_7"
+  						"item_1 item_4 item_6 item_7"
+  						"item_2 item_4 item_6 item_8"
+  						"item_2 item_4 item_6 item_8"
+  						"item_2 item_4 item_6 item_8"
+  						"item_2 item_4 item_6 item_8"; 
+  	grid-template-rows: repeat(10, 65px);
+  	grid-template-columns: repeat(4, 25%);
+}
+.item{
+	border: 1px solid black;
+}
+.item_1{
+	grid-area: item_1;
+	background:url("../img/1.png");
+}
+.item_2{
+	grid-area: item_2;
+	background:url("../img/2.png");
+}
+.item_3{
+	grid-area: item_3;
+	background:url("../img/3.png");
+}
+.item_4{
+	grid-area: item_4;
+	background:url("../img/4.png");
+}
+.item_5{
+	grid-area: item_5;
+	background:url("../img/5.png");
+}
+.item_6{
+	grid-area: item_6;
+	background:url("../img/6.png");
+}
+.item_7{
+	grid-area: item_7;
+	background:url("../img/7.png");
+}
+.item_8{
+	grid-area: item_8;
+	background:url("../img/8.png");
 }
